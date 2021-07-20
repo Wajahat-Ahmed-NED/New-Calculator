@@ -1,55 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <!-- calculator -->
+  <div class="container">
+  <h1 style="margin: 0 100px 0 0px; font-size: 3.5em; ">Calculator</h1><br>
+  <h3 style="margin: 0 100px 0 0px; "> &nbsp; A Project of Jawan Pakistan</h3>
+  <p style="margin: 0 100px 0 0px; "> &nbsp; Under the supervision of Sir Muhammad Ali Mughal</p>
+</div>
+  <!-- <h1 >Calculator</h1> -->
+    
+  <div class="calculator">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="style.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-      
-      <div class=" my-5 container " >
-        <div class="my-5 text-center">
-          <h1 >Calculator</h1>
-      
-      
-      <input type="text" placeholder="123..."><br><br>
-          
-            <button class="btn btn-outline-info"  id="bt1" onclick="btnClicked(1)">1</button>
-            <button class="btn btn-outline-info"  id="bt2" onclick="btnClicked(2)">2</button>
-            <button class="btn btn-outline-info"  id="bt3" onclick="btnClicked(3)">3</button>
-            <button class="btn btn-outline-info"  id="bt+" onclick="btnClicked(plus)">+</button><br><br>
-
-            <button class="btn btn-outline-info"  id="bt4" onclick="btnClicked(4)">1</button>
-            <button class="btn btn-outline-info"  id="bt5" onclick="btnClicked(5)">2</button>
-            <button class="btn btn-outline-info"  id="bt6" onclick="btnClicked(6)">3</button>
-            <button class="btn btn-outline-info"  id="bt-" onclick="btnClicked(minus)">-</button><br><br>
-
-            <button class="btn btn-outline-info"  id="bt7" onclick="btnClicked(7)">1</button>
-            <button class="btn btn-outline-info"  id="bt8" onclick="btnClicked(8)">2</button>
-            <button class="btn btn-outline-info"  id="bt9" onclick="btnClicked(9)">3</button>
-            <button class="btn btn-outline-info"  id="bt*" onclick="btnClicked(multiply)">*</button><br><br>
-        
-            <button class="btn btn-outline-info"  id="bt0" onclick="btnClicked(0)">0</button>
-            <button class="btn btn-outline-info"  id="bt." onclick="btnClicked(dot)">.</button>
-            <button class="btn btn-outline-info"  id="bt=" onclick="btnClicked(equals)">=</button>
-            <button class="btn btn-outline-info"  id="bt/" onclick="btnClicked(divide)">/</button><br><br>
-          </div>
+    <!-- display -->
+    <input type="text" class="display" disabled>
+    <!-- keys -->
+    <div class="keys">
+      <!-- 4 rows of keys -->
+      <div class="row">
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+        <button value="+" class="operator">+</button>
+      </div>
+      <div class="row">
+        <button value="4">4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
+        <button value="-" class="operator">-</button>
+      </div>
+      <div class="row">
+        <button value="1">1</button>
+        <button value="2">2</button>
+        <button value="3">3</button>
+        <button value="*" class="operator">*</button>
+      </div>
+      <div class="row">
+        <button value="C" class="operator">C</button>
+        <button value="0">0</button>
+        <button value="/" class="operator">/</button>
+        <button value="=" class="operator">=</button>
+      </div>
     </div>
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="app.js"></script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
+  </div>
+  <!-- calculator body ends -->
+  
+  <script type="text/javascript" src="app.js"></script>
+</body>
 </html>
